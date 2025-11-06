@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@variant dark (&:where(.dark, .dark *)) {
+  /* This enables class-based dark mode */
+}
+/* Fix the unknownAt rule: css.lint.unknown set to ignore */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
